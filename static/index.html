@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title>chattable</title>
+    <meta charset="utf-8">
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/socket.io-client/dist/socket.io.js"></script>
+    <script src="/main.js"></script>
+    <style>
+      #chat-container {
+        height: 300px;
+        width: 50%;
+        float: left;
+        background-color: gray;
+        padding: 20px;
+      }
+      #options-container {
+        height: 300px;
+        width: 25%;
+        float: left;
+        background-color: pink;
+        padding: 20px;
+      }
+      #message-list-container {
+        height: 200px;
+        overflow-y: auto;
+        background-color: white;
+      }
+      #message-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      #message-list li {
+        margin-left: 5px;
+      }
+      #new-message-form {
+        padding-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="chat-container">
+      <h2 id="chatroom-title"></h2>
+      <div id="message-list-container">
+        <ul id="message-list"></ul>
+      </div>
+      <form id="new-message-form">
+        <input type="text" id="new-message-input" placeholder="Say something...">
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <div id="options-container">
+      <h2 id="options-title">Options</h2>
+      <form id="new-chatroom-form">
+        <input type="text" id="new-chatroom-input" placeholder="Chatroom name">
+        <button type="submit">Join room</button>
+      </form>
+      <form id="username-form">
+        <input type="text" id="username-input" placeholder="Username">
+        <button type="submit">Change username</button>
+      </form>
+    </div>
+  </body>
+</html>

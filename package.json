@@ -1,0 +1,25 @@
+{
+  "name": "chattable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tperamaki/chattable.git"
+  },
+  "author": "Teemu Perämäki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tperamaki/chattable/issues"
+  },
+  "homepage": "https://github.com/tperamaki/chattable#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.0",
+    "lodash": "^4.17.11",
+    "socket.io": "^2.2.0"
+  }
+}

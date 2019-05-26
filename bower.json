@@ -1,0 +1,21 @@
+{
+  "name": "chattable",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Teemu Perämäki"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/tperamaki/chattable",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "socket.io": "^2.2.0"
+  }
+}
