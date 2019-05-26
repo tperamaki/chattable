@@ -13,7 +13,7 @@ var topicName = 'chatMessages';
 
 var producer = new kafka.Producer(new kafka.KafkaClient());
 var consumer = new kafka.Consumer(new kafka.KafkaClient(),
-                                  [ { topic: topicName, partition: 0 } ]
+                                  [ { topic: topicName, partition: 0 } ],
                                   { autoCommit: true, groupId: groupId });
 consumer.on('message', messages => {
   console.log(messages);
